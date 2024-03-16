@@ -13,7 +13,7 @@ document.getElementById('imagen-modal').addEventListener('click', function() {
 document.getElementById('imagen-modal2').addEventListener('click', function() {
     this.classList.toggle('ampliada'); // Cambiar entre clases 'ampliada' y normal
 });
-document.getElementById('imagen-moda3').addEventListener('click', function() {
+document.getElementById('imagen-modal3').addEventListener('click', function() {
     this.classList.toggle('ampliada'); // Cambiar entre clases 'ampliada' y normal
 });
 
