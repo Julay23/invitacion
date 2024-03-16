@@ -1,0 +1,172 @@
+.header-img {
+    width: 100%; /* Ajusta el tamaño de la imagen al 100% del contenedor */
+    display: block; /* Asegura que la imagen se muestre como bloque */
+    margin-bottom: 20px; /* Espacio inferior para separar el texto */
+}
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-style: oblique;
+    color: whitesmoke;
+}
+
+body {
+    background: linear-gradient(to bottom, #2980b9, #6dd5fa); /* Degradado en vertical */
+    height: 100vh; /* Hace que el fondo ocupe toda la altura de la ventana */
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.hidden {
+    display: none;
+}
+
+.carta-img {
+    width: 100px;
+    margin: 0 auto;
+    display: block;
+}
+
+.click-to-open {
+    text-align: center;
+    cursor: pointer;
+}
+
+.tickets {
+    text-align: center;
+}
+
+.ticket {
+    width: 35%;
+    margin: 10px;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+   
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 20% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 80%;
+    
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button#acepto {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    
+}
+
+button#acepto:hover {
+    background-color: #45a049; /* Verde más oscuro */
+}
+.color-destacado {
+    color: white; /* Cambia el color a tu preferencia */
+}
+/* ANIMACION DE CUMPLEAÑOS*/
+.animated-heading {
+    animation: bounce 2s infinite; /* Aplica la animación 'bounce' durante 2 segundos y se repite infinitamente */
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0); /* Mantiene la posición original */
+    }
+    40% {
+        transform: translateY(-30px); /* Se mueve hacia arriba */
+    }
+    60% {
+        transform: translateY(-15px); /* Se mueve hacia arriba */
+    }
+}
+
+/* Animacion del sobre */
+
+.pulse {
+    animation: pulse-animation 1.5s infinite alternate; /* Aplica la animación 'pulse-animation' durante 1 segundo y se repite infinitamente */
+}
+
+@keyframes pulse-animation {
+    0% {
+        transform: translateY(0); /* No hay desplazamiento vertical */
+    }
+    100% {
+        transform: translateY(-8px); /* Desplazamiento hacia arriba */
+    }
+}
+
+
+
+.ampliada {
+    width: 100%; /* Ancho al 100% para ocupar toda la pantalla */
+    height: auto; /* Altura automática para mantener la proporción */
+    position: fixed; /* Fija la posición */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto; /* Centra la imagen */
+    z-index: 2; /* Asegura que esté sobre el modal */
+    cursor: pointer; /* Cambia el cursor a un puntero */
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo oscuro semi-transparente */
+}
